@@ -36,9 +36,9 @@ const Nvbar = () => {
                                 <Nav.Link className="nav-text text-center" href="about">About</Nav.Link>
                                 <Nav.Link className="nav-text text-center" href="contact">Contact</Nav.Link>
                                 {user && <Nav.Link className="nav-text text-center" to="myrecipes">My Recipes</Nav.Link>}
-                                {/* <div className='d-flex align-items-center mx-5'>
+                                <div className='d-flex align-items-center mx-5'>
                                     {user?.displayName ? <Link className="btn-book-a-table" onClick={handleSignOut}>Logout</Link> : <Link className="btn-book-a-table" to='signin'>SignIn</Link>}
-                                </div> */}
+                                </div>
                             </Nav>
                         </Navbar.Collapse>
                     </div>
