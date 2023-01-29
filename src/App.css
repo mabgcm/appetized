@@ -251,12 +251,13 @@ section {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 .header {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  width: 100%;
+  width: 80vw;
   border-bottom: 1px solid #fff;
 }
 
@@ -342,8 +343,12 @@ section {
 .account {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 800px;
+  /* align-items: center; */
+}
+
+.account p {
+  position: relative;
+  top: 0;
 }
 
 /* GOOGLE SIGN-IN */
@@ -582,5 +587,24 @@ section {
 }
 
 .capitalize {
+  text-transform: capitalize;
+}
+
+.recipe-page {
+  margin-top: 250px;
+}
+
+.user-welcome {
+  width: 350px;
+  margin-top: -80px;
+  margin-right: 20px;
+}
+
+.deneme {
+  height: 800px;
+  margin-top: 300px;
+}
+
+.capit {
   text-transform: capitalize;
 }

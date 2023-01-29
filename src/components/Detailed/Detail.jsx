@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { InputGroup } from 'react-bootstrap';
 import Filtering from './Filtering';
 import Results from './Results';
-import { Form } from 'react-router-dom';
 
 const Detail = () => {
 

@@ -69,25 +69,6 @@ const Filtering = ({ setQuery, setSelectedMeal, setHealthy, health, mealType, ge
                             ))}
                         </div>
                     </Collapse>
-
-                    {/* <div className='col-12'><h5>Meal Type:</h5></div>
-                    {['checkbox'].map((type) => (
-                        <div key={`default-${type}`} className="mb-3">
-                            <div
-                                name="healthy"
-                                id='healthy'
-                                onChange={(e) => setHealthy(e.target.value)}>
-                                {health.map((food, index) => (
-                                    <Form.Check
-                                        key={index}
-                                        value={food.toLowerCase()}
-                                        type={type}
-                                        label={food.charAt(0).toUpperCase()
-                                            + food.slice(1)} />
-                                ))}
-                            </div>
-                        </div>
-                    ))} */}
                 </div>
 
             </Form >

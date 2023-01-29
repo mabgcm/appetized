@@ -1,5 +1,6 @@
 import React from 'react';
 import { UserAuth } from '../context/AuthContext';
+import Home from './Home';
 
 const Account = () => {
 
@@ -14,10 +15,10 @@ const Account = () => {
     };
 
     return (
-        <div className='account mt-5'>
-            <h2>This is the user's account page.</h2>
-            <h5 className='mt-5'>Welcome, {user?.displayName}</h5>
+        <div className='row account mt-5'>
+            <div className='col-12'><p className='mt-5'>Welcome, {user?.displayName}</p></div>
             {/* <button onClick={handleSignOut}>LogOut</button> */}
+            <Home />
         </div>
     )
 }

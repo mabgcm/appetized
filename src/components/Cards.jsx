@@ -29,7 +29,7 @@ const Cards = ({ recipes }) => {
                             <div className='detailbtn'>
                                 <button className='btn btn-book-a-table'
                                     onClick={() =>
-                                        navigate('recipe', { state: recipe, replace: false })
+                                        navigate('/recipe', { state: recipe, replace: false })
                                     }
                                 >
                                     See Recipe
