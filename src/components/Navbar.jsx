@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
 import logo from '../assets/img/logo.png';
 import Container from 'react-bootstrap/Container';
@@ -9,10 +9,12 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const Nvbar = () => {
     const { user, logOut } = UserAuth();
+    const navigate = useNavigate();
 
     const handleSignOut = async () => {
         try {
             await logOut();
+            navigate('/');
         } catch (error) {
             console.log(error);
         }
